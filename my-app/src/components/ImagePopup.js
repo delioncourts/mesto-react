@@ -1,5 +1,9 @@
-function ImagePopup() {
-    return
+import React from 'react';
+
+function ImagePopup(props) {
+    return (
+        <article></article>
+            )
 
 }
 

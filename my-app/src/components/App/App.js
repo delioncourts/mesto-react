@@ -1,18 +1,19 @@
-import logo from '../../logo.svg';
-import './App.css';
-import Card from '../Card';
+//import './App.css';
+import React from 'react';
+//import Card from '../Card';
 import Footer from '../Footer';
 import Header from '../Header';
 import ImagePopup from '../ImagePopup';
-import Main from '../ImagePopup';
+import Main from '../Main';
 import PopupWithForm from '../PopupWithForm';
 
 function App() {
-  return (
-    <div className="App">
-<Card />
+  return ( <div>
+    <div className="page">
+      <Header />
+      <Main />
 <Footer />
-<Header />
+</div>
 <ImagePopup />
 <Main />
 <PopupWithForm />

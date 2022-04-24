@@ -1,5 +1,9 @@
-function Main() {
-    return
+import React from 'react';
+
+function Main(props) {
+    return (
+        <article></article>
+            )
 
 }
 
