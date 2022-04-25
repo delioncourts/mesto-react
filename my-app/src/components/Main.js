@@ -16,15 +16,16 @@ function Main(props) {
                 setUserDescription(profile.about);
                 setUserAvatar(profile.avatar);
             })
-            .catch(err => console.log(err));
+            .catch(error => 
+                console.log(error));
     }, []);
 
 
     React.useEffect(() => {
         api.getInitialCards()
             .then(setCards)
-            .catch(err => {
-                console.log(err)
+            .catch(error => {
+                console.log(error)
             })
     }, [])
 
