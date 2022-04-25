@@ -64,8 +64,8 @@ function App() {
       isOpen={isEditAvatarPopupOpen}
       openEditAvatar={handleEditAvatarClick}
       onClose={closeAllPopups}>
-      <input type="url" name="avatar" className="popup__input" id="avatar" required
-        placeholder="Ссылка на аватар" />
+      <input type="url" name="avatar" className="popup__input" id="avatar" 
+        placeholder="Ссылка на аватар" required />
       <span id="avatar-error" className="popup__error" />
     </PopupWithForm>
 
