@@ -33,7 +33,7 @@ function Main(props) {
         <main className="main">
             <section className="profile">
                 <div style={{ backgroundImage: `url(${userAvatar})` }} alt="фотография профиля" className="profile__avatar"></ div>
-                <button onClick={props.onsetUserAvatar} type="button" className="profile__edit"></button>
+                <button onClick={props.onEditAvatar} type="button" className="profile__edit"></button>
                 <div className="profile__info">
                     <div className="profile__container">
                         <h1 className="profile__title">{userName}</h1>
