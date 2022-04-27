@@ -141,7 +141,6 @@ function App() {
       </div>
     </CurrentUserContext.Provider>
   );
-
 }
 
 export default App;

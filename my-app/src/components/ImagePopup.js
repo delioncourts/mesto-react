@@ -10,7 +10,6 @@ function ImagePopup(props) {
             </div>
         </article>
     )
-
 }
 
 export default ImagePopup;

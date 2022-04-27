@@ -35,10 +35,8 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
                             onCardDelete={onCardDelete} />))}
                 </ul>
             </section>
-
         </main>
     )
-
 }
 
 export default Main;
