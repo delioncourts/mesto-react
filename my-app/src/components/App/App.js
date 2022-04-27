@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
 import ImagePopup from '../ImagePopup';
@@ -11,15 +11,15 @@ import AddPlacePopup from "../AddPlacePopup";
 import api from "../../utils/Api";
 
 function App() {
-  const [isEditProfilePopupOpen, setOpenEditProfile] = React.useState(false);
-  const [isAddPlacePopupOpen, setOpenAddPlace] = React.useState(false);
-  const [isEditAvatarPopupOpen, setOpenEditAvatar] = React.useState(false);
-  const [selectedCard, setSelectedCard] = React.useState({});
-  const [isImageOpen, setImageOpen] = React.useState(false);
-  const [currentUser, setCurrentUser] = React.useState({});
-  const [cards, setCards] = React.useState([]);
+  const [isEditProfilePopupOpen, setOpenEditProfile] = useState(false);
+  const [isAddPlacePopupOpen, setOpenAddPlace] = useState(false);
+  const [isEditAvatarPopupOpen, setOpenEditAvatar] = useState(false);
+  const [selectedCard, setSelectedCard] = useState({});
+  const [isImageOpen, setImageOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState({});
+  const [cards, setCards] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     Promise.all([api.getInitialCards(), api.getProfile()])
       .then(([cards, userData]) => {
         setCurrentUser(userData);
