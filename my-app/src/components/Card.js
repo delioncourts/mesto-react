@@ -30,7 +30,6 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
         onCardDelete(card);
     }
 
-
     return (
         <li className="card">
             <button onClick={handleDeleteClick} className={cardDeleteButtonClassName} type="button" aria-label="удалить"></button>
