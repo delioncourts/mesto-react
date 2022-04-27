@@ -18,7 +18,6 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
     // Создаём переменную, которую после зададим в `className` для кнопки лайка
     const cardLikeButtonClassName = `card__like ${isLiked ? 'card__like-active' : ''} `;
 
-
     function handleClick() {
         onCardClick(card);
     }

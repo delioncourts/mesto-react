@@ -28,7 +28,6 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-
   function handleCardClick(card) {
     setSelectedCard(card);
     setImageOpen(true);
@@ -109,7 +108,6 @@ function App() {
       .catch(error => console.log(error));
   }
 
-
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div>
@@ -127,7 +125,6 @@ function App() {
             onCardDelete={handleCardDelete} />
           <Footer />
         </div>
-
 
         <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
 
