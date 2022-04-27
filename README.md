@@ -10,4 +10,5 @@
 
 ### Страница на gh-pages
 
+https://delioncourts.github.io/mesto-react/
 
