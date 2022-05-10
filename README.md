@@ -21,7 +21,3 @@
 - В директории проекта запустить приложение в режиме разработки: 
     - npm install 
     - npm start
-
-## Cсылка на проект 
-
-[Mesto](https://delioncourts.github.io/mesto-react/)
